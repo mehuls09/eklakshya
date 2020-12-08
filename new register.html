@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <h2>REGISTER HERE</h2>
+    <table border="5" cellpadding="10" cellspacing="20">
+        <form action="gallery.html" method="GET" id="form1">
+            <tr>
+             <td>Name:</td>
+             <td><input type="text" name="name" id="name" required></td>  
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pass" id="pass"></td>
+            </tr>
+            <tr>
+                <td>Phone no.:</td>
+                <td><input type="tel" name="no" id="tel" minlength="8" maxlength="10" placeholder="88888888" required></td>
+            </tr>
+            <tr>
+                <td>Email ID:</td>
+                <td><input type="email" name="email" id="4" placeholder="xyz@abc.com"></td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" name="date" id="date"></td>
+            </tr>
+            <tr>
+                <td>Date Time:</td>
+                <td><input type="datetime-local" name="dt" id="dt"></td>
+            </tr>
+            <tr>
+                <td>Technologies:</td>
+                <td>
+                    <select size="2" multiple>
+                        <option value="html">HTML</option>
+                        <option value="c++">CSS</option>
+                        <option value="java">Javascript</option>
+                        <option value="C#">Python</option>
+                        <option value="php">PHP</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Branch:
+                    <td>
+                    Computer<input type="radio" name="branch" value="CS">
+                    IT<input type="radio" name="branch" value="IT">
+                    </td>
+                </td>        
+            </tr>
+            <br>
+            <tr>
+                <td>Colour:</td>
+                <td><input type="color"></td>        
+            </tr>          
+            <tr>
+                <td>Qualification:</td>
+                <td>
+                    Graduation<input type="checkbox" name="grad" value="grad">
+                    Post Graduation<input type="checkbox" name="postgrad" id="postgrad">
+                </td> 
+            </tr>     
+        </form>
+        <tr>
+            <td><button type="submit" form="form1" value="Submit">Submit</button></td>
+            <td><button type="reset" form="form1" value="Reset">Reset</button></td>        
+        </tr>
+    </table>
+</body>
+</html>
