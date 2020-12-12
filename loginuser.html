@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login User</title>
+    <script>
+       function loginuser(){
+       var usernames=['rahul','rajesh','rohan','raj']
+       var user=document.getElementById("username").value;
+       var flag=1; 
+         for(let i=0;i<usernames.length;i++)
+        {
+             if(user==usernames[i])
+            {    
+                flag=0
+                break
+            }
+            else{
+                flag=1; 
+            }
+         }
+         if(flag==0)
+         {
+            document.getElementById("mydiv").innerHTML="Welcome "+user;
+         }
+         else{
+            document.getElementById("mydiv").innerHTML="Wrong username";
+         }
+        }       
+    </script>
+</head>
+<body>
+    <input type="text" id="username">
+    <button  onclick="loginuser()">To Validate</button>
+    <div id="mydiv" style="background-color: blanchedalmond;"></div>
+</body>
+</html>
