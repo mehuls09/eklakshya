@@ -10,22 +10,25 @@
         var laptop= ['Dell', 'Lenovo', 'Mac'];
 
         function items(){
-            op=document.getElementById("op").value;
+            option=document.getElementById("op").value;
             var mydiv= document.getElementById("myid");
             mydiv.innerHTML='Welcome to Store<br>';
-            switch(op){
+            switch(option){
                 case 'tv':
                 tv.forEach(function(element){
                     mydiv.innerHTML+=element+"<br>";
                 });
+                break;
                 case 'mobile':
                 mobile.forEach(function(element){
                     mydiv.innerHTML+=element+"<br>";
                 });
+                break;
                 case 'laptop':
                 laptop.forEach(function(element){
                     mydiv.innerHTML+=element+"<br>";
                 });
+                break;
             }
         }
     </script>
