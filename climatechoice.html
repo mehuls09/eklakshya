@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimateChoice</title>
+<script>
+    function clm(){
+            option=document.getElementById('climate').value;
+            switch(option){
+                case 'summer':
+                document.getElementById("mydiv").innerHTML = 'Eat icecream. Go for swimming';
+                break;
+                case 'rainy':
+                document.getElementById("mydiv").innerHTML = 'Drink Tea and samosa. Enjoy rain';
+                break;
+                case 'winter':
+                document.getElementById("mydiv").innerHTML = 'Drink hot soup and sleep';
+                break;
+                case 'windy':
+                document.getElementById("mydiv").innerHTML = 'Enjoy Cycling and kite flying';
+                break;  
+            }
+        }
+</script>
+</head>
+<body>
+    <form>
+    <select id="climate">
+<option value="rainy">summer</option>
+<option value="summer">rainy</option>  
+<option value="winter">winter</option>    
+<option value="windy">windy</option>
+</select><br><br>
+<input type='button' value="click" onclick=clm()>
+</form>
+<div id="mydiv" style="background-color:lightgoldenrodyellow; color:crimson; text-align: center;"></div>
+</body>
+</html>
